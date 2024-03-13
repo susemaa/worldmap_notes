@@ -1,7 +1,9 @@
 {
   "parser": "@typescript-eslint/parser",
   "extends": [
+    "plugin:@next/next/recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
     "airbnb",
     "airbnb/hooks"
@@ -21,7 +23,10 @@
     }
   },
   "rules": {
-    "react/prop-types": "off"
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off"
   },
   "env": {
     "browser": true,
